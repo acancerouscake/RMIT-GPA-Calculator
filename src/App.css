@@ -1,38 +1,253 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(120deg, #ee9999 0%, #af0202 100%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+/** APP.JS **/
+.gpa_calc_title{
+  min-height: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+header {
+  min-height: 10vh;
+  height: 10vh;
+  display: block;
+  padding: 20px;
+}
+
+
+/* Form.js */
+.lottie-ed{
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+  margin: auto;
+}
+
+.gpa-form {
+  background-color:#af020257;
+  width: 35rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.gpa-form p{
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+form {
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form input,
+form button, .close-btn {
+  padding: 0.4rem;
+  margin: 0.4rem;
+  font-size: 1.5rem;
+  border: none;
+  background: white;
+  margin-bottom: 7px;
+  border-radius: 10px;
+}
+
+form input {
+  width: 4rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form button, .close-btn {
+  margin-top: 1.5em;
+  color: #ff6f47;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100px;
+  border-color: #ff6f47;
+  border-style: solid;
+  border-width: 1px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form button:hover, .close-btn:hover {
+  background: #ff6f47;
+  color: white; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/*.close-btn{
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+}*/
+
+.gpa-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gpa-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.gpa {
+  margin: 0.5rem;
+  background: white;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.gpa li {
+  flex: 1;
+}
+
+.gpa-item {
+  padding: 0rem 0.5rem;
+}
+
+
+/** Popup.js **/
+.popup{
+  min-height: 2vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:70vh;
+  z-index: 10;
+  transition: all 0.5s ease;
+  margin-top: 10px;
+}
+
+.popup-inner{
+  border-radius: 10px;
+  position: relative;
+  padding: 15px;
+  width:100%;
+  height: 100%;
+  max-height: 300px;
+  max-width:700px;
+  background-color: #ffffff;
+  color: rgb(231, 121, 121);
+}
+
+.popup-inner p{
+  padding-top: 30px;
+  font-size: smaller;
+}
+
+
+
+/* Results.js */
+.results-gpa {
+  min-height: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  transition: all 0.7s ease;
+  z-index: 9;
+}
+
+.inner-results{
+  position: relative;
+  padding: 12px;
+  width:100%;
+  max-width:500px;
+  background-color: #ffffff;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.inner-results p{
+  color: rgb(231, 121, 121);
+  font-size: 2rem;
+}
+
+.inner-results h3{
+  position: relative;
+  z-index: 9;
+  font-size: 200px;
+  color: rgb(231, 121, 121);
+  top: -325px;
+  margin-bottom: -325px;
+}
+
+.lottie-confetti{
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: 8;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+/* Misc */
+.close-btn {
+  margin-top: 3rem;
+  color: #ff6f47;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 20%;
+  height: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+.fall {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
 }
+
+
+/*CUSTOM SELECTOR */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
