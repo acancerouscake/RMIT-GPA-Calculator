@@ -25,7 +25,6 @@ header {
   padding: 20px;
 }
 
-
 /* Form.js */
 .lottie-ed{
   position: relative;
@@ -168,8 +167,6 @@ form button:hover, .close-btn:hover {
   padding-top: 30px;
   font-size: smaller;
 }
-
-
 
 /* Results.js */
 .results-gpa {
