@@ -3,12 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-image: linear-gradient(120deg, #ee9999 0%, #af0202 100%);
   color: white;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
 }
+
 /** APP.JS **/
 .gpa_calc_title{
   min-height: 2vh;
