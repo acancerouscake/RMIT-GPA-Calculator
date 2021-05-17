@@ -11,20 +11,109 @@ body {
   min-height: 100vh;
 }
 
+
+@media (max-width: 767px) {
+  .gpa-form {
+    width: 20rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .popup{
+    font-size: 1rem;
+  }
+  .popup-inner{
+    max-width: 300px;
+    max-height: 700px;
+  }
+
+  .gpa-form p{
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .form input, form button, .close-btn {
+  font-size: 1rem;
+  }
+
+  .popup-inner{
+    max-width: 300px;
+    max-height: 400px;
+    padding-top: 0px;
+  }
+  
+  .inner-results{
+    padding: 5px;  
+  }
+  
+  .inner-results h3 { 
+    font-size: 50px;
+    top: -150px;
+    margin-bottom: -100px;
+  }
+}
+
+
+@media (max-width: 421px) {
+  .gpa-form {
+    width: 18rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .lottie-ed{
+    border-radius: 10%;
+    width: 75px;
+    height: 75px;
+  }
+
+  .gpa-form p{
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .form input, form button, .close-btn {
+  font-size: 1rem;
+}
+
+.popup{
+  font-size: 1rem;
+}
+.popup-inner{
+  max-width: 300px;
+  max-height: 400px;
+  padding-top: 0px;
+}
+
+.inner-results{
+  padding: 5px;
+  
+  }
+
+  .inner-results h3{ 
+    font-size: 50px;
+    top: -150px;
+    margin-bottom: -100px;
+  }
+
+
+}
+
+
 /** APP.JS **/
 .gpa_calc_title{
-  min-height: 2vh;
+  min-height: 1vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+ 
 }
 
 header {
   min-height: 10vh;
   height: 10vh;
   display: block;
-  padding: 20px;
 }
 
 /* Form.js */
@@ -157,9 +246,7 @@ form button:hover, .close-btn:hover {
 .popup-inner{
   border-radius: 10px;
   position: relative;
-  padding: 15px;
-  width:100%;
-  height: 100%;
+  padding: 5px;
   max-height: 300px;
   max-width:700px;
   background-color: #ffffff;
@@ -228,10 +315,6 @@ form button:hover, .close-btn:hover {
   width: 20%;
   height: 30px;
 }
-
-
-
-
 
 .fall {
   transform: translateY(10rem) rotateZ(20deg);

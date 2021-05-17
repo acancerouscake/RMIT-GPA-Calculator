@@ -20,7 +20,11 @@ const Form = ({ onSubmit }) => {
        
         <div className="gpa-form">
 
-          <p> Enter the <strong>total</strong> amounts for each, if a <strong>double</strong> course was studied (24 credit points), include the course and grade <strong>twice</strong>.  </p>
+          <p> Enter the <strong>total</strong> amounts for each, if a <strong>double</strong> course was studied (24 credit points), 
+          include the course and grade <strong>twice</strong>. 
+          <br></br> <br></br> 
+          If you received a <strong>fail</strong> grade (NN), include it in the total courses studied.
+           </p>
             
             <form onSubmit={submitHandler}>
                 <label for="totalCourses"> Courses Studied:</label>
@@ -30,6 +34,7 @@ const Form = ({ onSubmit }) => {
                     className="gpa-input"
                     required
                     min="1"
+                    max="99"
                     defaultValue="24"
                 />
 
@@ -42,7 +47,7 @@ const Form = ({ onSubmit }) => {
                     required 
                     min="0"
                     defaultValue="0"
-
+                    max="99"
                 />
                 <label for="totalDIs"> Distinctions (DI):</label>  
                 <input 
@@ -52,6 +57,7 @@ const Form = ({ onSubmit }) => {
                     required
                     min="0"
                     defaultValue="0"
+                    max="99"
 
                 />
 
@@ -63,6 +69,7 @@ const Form = ({ onSubmit }) => {
                     required
                     min="0"
                     defaultValue="0"
+                    max="99"
 
                 />
                 <label for="totalPAs"> Passes (PA):</label>  
@@ -73,18 +80,8 @@ const Form = ({ onSubmit }) => {
                     required
                     min="0"
                     defaultValue="0"
+                    max="99"
 
-
-                />
-
-                <label for="totalSPs"> Supplementary Passes (SP):</label>  
-                <input 
-                    name="totalSPs"
-                    type="number" 
-                    className="gpa-input" 
-                    required
-                    min="0"
-                    defaultValue="0"
 
                 />
                 

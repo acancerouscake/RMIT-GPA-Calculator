@@ -12,9 +12,8 @@ const Results = ( {gpaData, close, show} ) => {
     const di = gpaData.totalDIs === 0 ? 0 : gpaData.totalDIs * 3 * 12
     const cr = gpaData.totalCRs === 0 ? 0 : gpaData.totalCRs * 2 * 12
     const pa = gpaData.totalPAs === 0 ? 0 : gpaData.totalPAs * 1 * 12
-    const sp = gpaData.totalSPs === 0 ? 0 : gpaData.totalSPs * 1 * 12
 
-    const totalGradePoint = hd + di + cr + pa + sp;
+    const totalGradePoint = hd + di + cr + pa
     const finalGPA = Math.min(Math.round(totalGradePoint/credits * 10 ) /10, 4);
     
     return (   

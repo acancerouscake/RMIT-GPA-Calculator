@@ -42,8 +42,8 @@ function App() {
       </header>
 
       <div className="lottie-ed"> 
-                <Lottie animationData={education}/> 
-            </div>
+        <Lottie animationData={education}/> 
+      </div>
       <h4 className="gpa_calc_title">GPA Calculator</h4>
       <Form
         onSubmit={handleInputText}
