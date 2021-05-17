@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
@@ -36,6 +37,10 @@ body {
   font-size: 1rem;
   }
 
+  .form button {
+    padding-bottom: 2px;
+  }
+
   .popup-inner{
     max-width: 300px;
     max-height: 400px;
@@ -58,7 +63,7 @@ body {
   .gpa-form {
     width: 18rem;
     padding-top: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
   }
 
   .lottie-ed{
@@ -111,8 +116,8 @@ body {
 }
 
 header {
-  min-height: 10vh;
-  height: 10vh;
+  min-height: 8vh;
+  height: 8vh;
   display: block;
 }
 
