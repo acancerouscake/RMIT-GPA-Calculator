@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/RMIT-GPA-Calculator/static/css/main.eeb0c411.chunk.css",
+    "main.css": "/RMIT-GPA-Calculator/static/css/main.4c640943.chunk.css",
     "main.js": "/RMIT-GPA-Calculator/static/js/main.e0b70257.chunk.js",
     "main.js.map": "/RMIT-GPA-Calculator/static/js/main.e0b70257.chunk.js.map",
     "runtime-main.js": "/RMIT-GPA-Calculator/static/js/runtime-main.8a866cbc.js",
@@ -10,14 +10,14 @@
     "static/js/3.1b582e64.chunk.js": "/RMIT-GPA-Calculator/static/js/3.1b582e64.chunk.js",
     "static/js/3.1b582e64.chunk.js.map": "/RMIT-GPA-Calculator/static/js/3.1b582e64.chunk.js.map",
     "index.html": "/RMIT-GPA-Calculator/index.html",
-    "static/css/main.eeb0c411.chunk.css.map": "/RMIT-GPA-Calculator/static/css/main.eeb0c411.chunk.css.map",
+    "static/css/main.4c640943.chunk.css.map": "/RMIT-GPA-Calculator/static/css/main.4c640943.chunk.css.map",
     "static/js/2.3c044db2.chunk.js.LICENSE.txt": "/RMIT-GPA-Calculator/static/js/2.3c044db2.chunk.js.LICENSE.txt",
     "static/media/rmit_logo_blue.78e6ab6c.svg": "/RMIT-GPA-Calculator/static/media/rmit_logo_blue.78e6ab6c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8a866cbc.js",
     "static/js/2.3c044db2.chunk.js",
-    "static/css/main.eeb0c411.chunk.css",
+    "static/css/main.4c640943.chunk.css",
     "static/js/main.e0b70257.chunk.js"
   ]
 }
